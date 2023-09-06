@@ -20,7 +20,7 @@ A ros package that implements an hardware interface for using ros controllers in
     ``rosgraph_msgs/msg/Clock``  
   - Before building the interface you need to install the following packages:  
   	``sudo apt install xsltproc``  
-	``pip install xmlschem``  
+	``pip install xmlschema``  
   - Now you can build the package:  
       ``cd ..``  
       ``export COPPELIASIM_ROOT_DIR=~/CoppeliaSim``  

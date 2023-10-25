@@ -1,6 +1,7 @@
 # Universal Robots ROS2 CoppeliaSim
 A ros package that implements an hardware interface for using ros controllers in CoppeliaSim.
 ## Installation
+0. Download CoppeliaSim from the [website](https://www.coppeliarobotics.com/downloads)
 1. Clone this repo in your workspace src folder:  
     ``git clone https://github.com/Hydran00/Universal_Robot_ROS2_CoppeliaSim.git``
 2. Build workspace:  

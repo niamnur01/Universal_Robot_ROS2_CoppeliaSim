@@ -117,6 +117,10 @@ Open CoppeliaSim and load ``coppelia_world.ttt`` which is under ``$HOME/ros2_ws/
 ```
 ros2 launch coppeliasim_HWInterface ur_coppelia_HWInterface.launch.py
 ```
+
+https://github.com/Hydran00/Universal_Robot_ROS2_CoppeliaSim/assets/93198865/1d3cc959-f36b-4224-923e-2f09fcd0596e
+
+
 In this video we are using a cartesian controller (https://github.com/fzi-forschungszentrum-informatik/cartesian_controllers/tree/ros2)
 
 

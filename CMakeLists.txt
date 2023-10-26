@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(coppeliasim_HWInterface LANGUAGES CXX)
+project(ur_coppeliasim LANGUAGES CXX)
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "(GNU|Clang)")
   add_compile_options(-Wall -Wextra)
@@ -23,17 +23,17 @@ endforeach()
 
 ## COMPILE
 add_library(
-  coppeliasim_HWInterface
+  ur_coppeliasim
   SHARED
   hardware/HWInterface.cpp
 )
-target_compile_features(coppeliasim_HWInterface PUBLIC cxx_std_17)
-target_include_directories(coppeliasim_HWInterface PUBLIC
+target_compile_features(ur_coppeliasim PUBLIC cxx_std_17)
+target_include_directories(ur_coppeliasim PUBLIC
 $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/hardware/include>
-$<INSTALL_INTERFACE:include/coppeliasim_HWInterface>
+$<INSTALL_INTERFACE:include/ur_coppeliasim>
 )
 ament_target_dependencies(
-  coppeliasim_HWInterface PUBLIC
+  ur_coppeliasim PUBLIC
   ${THIS_PACKAGE_INCLUDE_DEPENDS}
 )
 
@@ -42,21 +42,21 @@ ament_target_dependencies(
 target_compile_definitions(${PROJECT_NAME} PRIVATE "ROS2_CONTROL_DEMO_EXAMPLE_1_BUILDING_DLL")
 
 # Export hardware plugins
-pluginlib_export_plugin_description_file(hardware_interface coppeliasim_HWInterface.xml)
+pluginlib_export_plugin_description_file(hardware_interface ur_coppeliasim.xml)
 
 # INSTALL
 install(
   DIRECTORY hardware/include/
-  DESTINATION include/coppeliasim_HWInterface
+  DESTINATION include/ur_coppeliasim
 )
 
 install(
-  DIRECTORY bringup/launch bringup/config urdf meshes config
-  DESTINATION share/coppeliasim_HWInterface
+  DIRECTORY launch urdf meshes config
+  DESTINATION share/ur_coppeliasim
 )
 
-install(TARGETS coppeliasim_HWInterface
-  EXPORT export_coppeliasim_HWInterface
+install(TARGETS ur_coppeliasim
+  EXPORT export_ur_coppeliasim
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
@@ -67,6 +67,6 @@ if(BUILD_TESTING)
 endif()
 
 ## EXPORTS
-ament_export_targets(export_coppeliasim_HWInterface HAS_LIBRARY_TARGET)
+ament_export_targets(export_ur_coppeliasim HAS_LIBRARY_TARGET)
 ament_export_dependencies(${THIS_PACKAGE_INCLUDE_DEPENDS})
 ament_package()

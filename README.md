@@ -30,7 +30,7 @@ mkdir -p ~/ros2_ws/src
 #### 4. Clone this repo in your workspace src folder:  
 ```
 cd ~/ros2_ws/src
-git clone https://github.com/Hydran00/Universal_Robot_ROS2_CoppeliaSim.git coppeliasim_HWInterface
+git clone https://github.com/Hydran00/Universal_Robot_ROS2_CoppeliaSim.git ur_coppeliasim
 ```
 #### 5. Build workspace:  
 ```
@@ -112,11 +112,11 @@ Open CoppeliaSim
 cd ~/CoppeliaSim/
 ./coppeliaSim.sh
 ```
-and load ``coppelia_world.ttt`` which is under ``~/ros2_ws/src/coppeliasim_HWInterface`` through ``File->Open_Scene``, then click the play button. The robot will move to a predefined HOMING joint configuration.
+and load ``coppelia_world.ttt`` which is under ``~/ros2_ws/src/ur_coppeliasim`` through ``File->Open_Scene``, then click the play button. The robot will move to a predefined HOMING joint configuration.
 
 #### 2. Run the hardware interface + cartesian motion controller:
 ```
-ros2 launch coppeliasim_HWInterface ur_coppelia_HWInterface.launch.py
+ros2 launch ur_coppeliasim ur_coppelia_HWInterface.launch.py
 ```
 An RViz window will display the robot model along with an interactive marker at the end-effector, which allows us to change the end-effector target frame by drag-and-drop. Then, the controller will automatically compute the desired joint position, which will be sent to the simulator.
 

@@ -50,8 +50,8 @@
      - Muhammad Asif Rana
   -->
 
-  <xacro:include filename="$(find coppeliasim_HWInterface)/urdf/inc/ur_transmissions.xacro" />
-  <xacro:include filename="$(find coppeliasim_HWInterface)/urdf/inc/ur_common.xacro" />
+  <xacro:include filename="$(find ur_coppeliasim)/urdf/inc/ur_transmissions.xacro" />
+  <xacro:include filename="$(find ur_coppeliasim)/urdf/inc/ur_common.xacro" />
 
   <xacro:macro name="ur_robot" params="
     name
@@ -98,7 +98,7 @@
 
 
     <!-- ros2 control include -->
-    <xacro:include filename="$(find coppeliasim_HWInterface)/urdf/ur.ros2_control.xacro" />
+    <xacro:include filename="$(find ur_coppeliasim)/urdf/ur.ros2_control.xacro" />
     <!-- ros2 control instance -->
     <xacro:rrbot_ros2_control
       name="${name}" prefix="${prefix}"

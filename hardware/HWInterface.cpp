@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "coppeliasim_HWInterface/HWInterface.hpp"
+#include "ur_coppeliasim/HWInterface.hpp"
 
 #include <chrono>
 #include <cmath>
@@ -25,7 +25,7 @@
 #include "sensor_msgs/msg/joint_state.hpp"
 #include "std_msgs/msg/float64_multi_array.hpp"
 using namespace std;
-namespace coppeliasim_HWInterface
+namespace ur_coppeliasim
 {
 
   sensor_msgs::msg::JointState current_joint_state;
@@ -250,4 +250,4 @@ namespace coppeliasim_HWInterface
 #include "pluginlib/class_list_macros.hpp"
 
 PLUGINLIB_EXPORT_CLASS(
-    coppeliasim_HWInterface::RRBotSystemPositionOnlyHardware, hardware_interface::SystemInterface)
+    ur_coppeliasim::RRBotSystemPositionOnlyHardware, hardware_interface::SystemInterface)

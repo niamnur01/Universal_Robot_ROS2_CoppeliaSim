@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 
-package_name = 'coppeliasim_HWInterface'
+package_name = 'ur_coppeliasim'
 share_dir = os.path.join("share", package_name)
 setup(
     name=package_name,

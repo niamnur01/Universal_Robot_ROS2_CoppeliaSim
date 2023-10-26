@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>coppeliasim_HWInterface</name>
+  <name>ur_coppeliasim</name>
   <version>1.0.0</version>
   <description>HW interface for coppeliaSim based on ros control examples</description>
 

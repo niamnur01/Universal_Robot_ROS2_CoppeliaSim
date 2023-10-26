@@ -1,5 +1,5 @@
 # Universal Robots ROS2 CoppeliaSim
-This repository provides a ROS2 package, coppeliasim_HWInterface, that implements an hardware interface of a Universal Robot using ROS2 controllers in CoppeliaSim.
+This repository provides a ROS2 package, ur_coppeliasim, that implements an hardware interface of a Universal Robot using ROS2 controllers in CoppeliaSim.
 
 ## Installation
 

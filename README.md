@@ -61,7 +61,7 @@ echo $'geometry_msgs/msg/Wrench\ngeometry_msgs/msg/WrenchStamped\nstd_msgs/msg/M
 #### 7. Build CoppeliaSim workspace
   - To build the Coppelia ros2 workspace we define the ``COPPELIASIM_ROOT_DIR`` environment variable:  
 ```
-export COPPELIASIM_ROOT_DIR=~/CoppeliaSim``  
+export COPPELIASIM_ROOT_DIR=~/CoppeliaSim 
 cd ~/CoppeliaSim/programming/ros2_packages/sim_ros2_interface/ 
 colcon build --symlink-install
 ```

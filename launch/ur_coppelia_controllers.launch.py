@@ -7,6 +7,15 @@ import xacro,os
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
 
+import os,time
+
+# Not elegant but works
+time.sleep(0.3)
+os.system("ros2 topic pub /stopSimulation std_msgs/msg/Bool '{data: true}' --once")
+time.sleep(0.3)
+os.system("ros2 topic pub /startSimulation std_msgs/msg/Bool '{data: true}' --once")
+time.sleep(1)
+
 distro = os.environ['ROS_DISTRO']
 if distro == 'humble' or distro == 'galactic':
     spawner = "spawner"
@@ -45,6 +54,7 @@ def generate_launch_description():
         remappings=[
             ('motion_control_handle/target_frame', 'target_frame'),
             ('cartesian_motion_controller/target_frame', 'target_frame'),
+            ('cartesian_compliance_controller/target_frame', 'target_frame'),
             ]
     )
 
@@ -60,6 +70,13 @@ def generate_launch_description():
         package="controller_manager",
         executable=spawner,
         arguments=["cartesian_motion_controller", "-c", "/controller_manager"],
+        parameters=[{"use_sim_time": use_sim_time}]
+    )
+    
+    cartesian_compliance_controller_spawner = Node(
+        package="controller_manager",
+        executable=spawner,
+        arguments=["cartesian_compliance_controller", "--stopped", "-c", "/controller_manager"],
         parameters=[{"use_sim_time": use_sim_time}]
     )
     

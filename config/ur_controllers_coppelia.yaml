@@ -256,10 +256,10 @@ cartesian_motion_controller:
     command_interfaces:
       - position
         #- velocity
-
+    ik_solver: "forward_dynamics"
     solver:
-        error_scale: 1.0
-        iterations: 10
+       error_scale: 1.0
+       iterations: 1
 
     pd_gains:
         trans_x: {p: 1.0}

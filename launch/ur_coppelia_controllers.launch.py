@@ -10,11 +10,10 @@ from launch_ros.substitutions import FindPackageShare
 import os,time
 
 # Not elegant but works
-time.sleep(0.3)
 os.system("ros2 topic pub /stopSimulation std_msgs/msg/Bool '{data: true}' --once")
-time.sleep(0.3)
+time.sleep(0.5)
 os.system("ros2 topic pub /startSimulation std_msgs/msg/Bool '{data: true}' --once")
-time.sleep(1)
+time.sleep(0.5)
 
 distro = os.environ['ROS_DISTRO']
 if distro == 'humble' or distro == 'galactic':

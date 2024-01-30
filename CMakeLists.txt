@@ -51,7 +51,7 @@ install(
 )
 
 install(
-  DIRECTORY launch urdf meshes config
+  DIRECTORY launch urdf meshes config rviz
   DESTINATION share/ur_coppeliasim
 )
 

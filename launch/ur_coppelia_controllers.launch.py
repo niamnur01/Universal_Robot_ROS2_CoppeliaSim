@@ -100,9 +100,8 @@ def generate_launch_description():
     )
 
     # Visualization
-    rviz_config = PathJoinSubstitution(
-        [FindPackageShare("cartesian_controller_simulation"), "etc", "robot.rviz"]
-    )
+    rviz_config = os.path.join(get_package_share_directory('ur_coppeliasim'), 'rviz',
+                             'robot.rviz')
     rviz = Node(
         package="rviz2",
         executable="rviz2",

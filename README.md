@@ -30,7 +30,7 @@ mkdir -p ~/ros2_ws/src
 #### 4. Clone this repo in your workspace src folder:  
 ```
 cd ~/ros2_ws/src
-git clone https://github.com/Hydran00/Universal_Robot_ROS2_CoppeliaSim.git ur_coppeliasim
+git clone https://github.com/niamnur01/Universal_Robot_ROS2_CoppeliaSim.git ur_coppeliasim
 ```
 #### 5. Build workspace:  
 ```
@@ -119,7 +119,5 @@ and load ``coppelia_world.ttt`` which is under ``~/ros2_ws/src/ur_coppeliasim`` 
 ros2 launch ur_coppeliasim ur_coppelia_controllers.launch.py
 ```
 An RViz window will display the robot model along with an interactive marker at the end-effector, which allows us to change the end-effector target frame by drag-and-drop. Then, the controller will automatically compute the desired joint position, which will be sent to the simulator.
-
-https://github.com/Hydran00/Universal_Robot_ROS2_CoppeliaSim/assets/93198865/1d3cc959-f36b-4224-923e-2f09fcd0596e
 
 

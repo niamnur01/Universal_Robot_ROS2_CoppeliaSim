@@ -1,6 +1,7 @@
-shoulder_pan_joint: 1.57
-shoulder_lift_joint: -1.57
-elbow_joint: 1.57
-wrist_1_joint: -1.57
-wrist_2_joint: 1.57
-wrist_3_joint: 0.0
+#If your're thinking about changing the starting position, rememeber to change the values as well in /ur_coppeliasim/hardware/HWIntrerface.cpp in line #143
+shoulder_pan_joint: 1.55
+shoulder_lift_joint: -0.65
+elbow_joint: -1.8
+wrist_1_joint: -1.0
+wrist_2_joint: -1.55
+wrist_3_joint: 3.14

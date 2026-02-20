@@ -10,10 +10,10 @@ from launch_ros.substitutions import FindPackageShare
 import os,time
 
 # Not elegant but works
-os.system("ros2 topic pub /stopSimulation std_msgs/msg/Bool '{data: true}' --once")
-time.sleep(0.5)
-os.system("ros2 topic pub /startSimulation std_msgs/msg/Bool '{data: true}' --once")
-time.sleep(0.5)
+#os.system("ros2 topic pub /stopSimulation std_msgs/msg/Bool '{data: true}' --once")
+#time.sleep(0.5)
+#os.system("ros2 topic pub /startSimulation std_msgs/msg/Bool '{data: true}' --once")
+#time.sleep(0.5)
 
 distro = os.environ['ROS_DISTRO']
 if distro == 'humble' or distro == 'galactic':
@@ -28,19 +28,20 @@ def generate_launch_description():
     use_sim_time = True
     description_package = get_package_share_directory('ur_coppeliasim')
     xacro_path = os.path.join(description_package,"urdf","ur.urdf.xacro")
-    initial_joint_controllers = os.path.join(description_package,"config", "ur_controllers_coppelia.yaml")
-    print(initial_joint_controllers)
+    #initial_joint_controllers = os.path.join(description_package,"config", "ur_controllers_coppelia.yaml")
+    robot_controllers = os.path.join(description_package, "config", "ur_controllers_coppelia.yaml")
+    print(robot_controllers)
+    
     ur_type="ur3e"
     robot_description_content = xacro.process_file(xacro_path, mappings={"safety_limits":"true","safety_pos_margin":"0.15",
                                                                         "safety_k_position":"20",
                                                                         "name":"ur","ur_type":ur_type,
                                                                         "prefix":'',"sim_ignition":"false","sim_gazebo":"false",
-                                                                        "simulation_controllers":initial_joint_controllers})
+                                                                        "simulation_controllers":robot_controllers})
     robot_description_content = robot_description_content.toprettyxml(indent=' ')
 
     robot_description = {"robot_description": robot_description_content}
 
-    robot_controllers = initial_joint_controllers
 
     # The actual simulation is a ROS2-control system interface.
     # Start that with the usual ROS2 controller manager mechanisms.
@@ -54,6 +55,8 @@ def generate_launch_description():
             ('motion_control_handle/target_frame', 'target_frame'),
             ('cartesian_motion_controller/target_frame', 'target_frame'),
             ('cartesian_compliance_controller/target_frame', 'target_frame'),
+            ("/coppelia_joint_states1", "/coppelia_joint_states"),
+	        ("/coppelia_set_joints1", "/coppelia_set_joints") 
             ]
     )
 
@@ -75,7 +78,15 @@ def generate_launch_description():
     cartesian_compliance_controller_spawner = Node(
         package="controller_manager",
         executable=spawner,
-        arguments=["cartesian_compliance_controller", "--stopped", "-c", "/controller_manager"],
+        #arguments=["cartesian_compliance_controller", "--stopped", "-c", "/controller_manager"],
+        arguments=["cartesian_compliance_controller", "-c", "/controller_manager"],
+        parameters=[{"use_sim_time": use_sim_time}]
+    )
+
+    joint_trajectory_controller_spawner = Node(
+        package="controller_manager",
+        executable=spawner,
+        arguments=["joint_trajectory_controller", "-c", "/controller_manager"],
         parameters=[{"use_sim_time": use_sim_time}]
     )
     
@@ -85,7 +96,7 @@ def generate_launch_description():
     motion_control_handle_spawner = Node(
         package="controller_manager",
         executable=spawner,
-        # arguments=["motion_control_handle", "-c"," --stopped " "/controller_manager"],
+        #arguments=["motion_control_handle", "-c"," --stopped " "/controller_manager"],
         arguments=["motion_control_handle", "-c", "/controller_manager"],
         parameters=[{"use_sim_time": use_sim_time}]
     )
@@ -115,8 +126,10 @@ def generate_launch_description():
     nodes = [
         control_node,
         joint_state_broadcaster_spawner,
-        cartesian_motion_controller_spawner,
-        motion_control_handle_spawner,
+        #joint_trajectory_controller_spawner,
+        #cartesian_motion_controller_spawner,
+        cartesian_compliance_controller_spawner,
+        #motion_control_handle_spawner,
         robot_state_publisher,
         rviz,
     ]

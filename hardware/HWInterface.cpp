@@ -63,7 +63,7 @@ namespace ur_coppeliasim
       return hardware_interface::CallbackReturn::ERROR;
     }
     // initializing variable to save the current joint state
-    current_joint_state.name = {"shoulder_pan_joint", "shoulder_lif_joint", "forearm_link", "wrist_1_link", "wrist_2_link", "wrist_3_link"};
+    current_joint_state.name = {"shoulder_pan_joint", "shoulder_lift_joint", "forearm_link", "wrist_1_link", "wrist_2_link", "wrist_3_link"};
     current_joint_state.position = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     current_joint_state.velocity = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
     current_joint_state.effort = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
@@ -140,7 +140,7 @@ namespace ur_coppeliasim
           rclcpp::get_logger("RRBotSystemPositionOnlyHardware"), "%.1f seconds left...",
           hw_start_sec_ - i);
     }
-    float initial_conf[]={1.57,-1.57,1.57,-1.57,-1.57,0.0};
+    float initial_conf[]={1.55, -0.65, -1.8, -1.0, -1.55, 3.14};
     for (uint i = 0; i < hw_pos_.size(); i++)
     {
       hw_pos_[i] = initial_conf[i];

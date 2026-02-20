@@ -1,0 +1,10 @@
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/uninstall.dir
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/ur_coppeliasim_uninstall.dir
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/ur_coppeliasim.dir
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/test.dir
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/edit_cache.dir
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/rebuild_cache.dir
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/list_install_components.dir
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/install.dir
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/install/local.dir
+/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim/CMakeFiles/install/strip.dir

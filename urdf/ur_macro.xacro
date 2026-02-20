@@ -71,7 +71,7 @@
     sim_gazebo:=false
     sim_ignition:=false
     headless_mode:=false
-    initial_positions:=${dict(shoulder_pan_joint=0.0,shoulder_lift_joint=-1.57,elbow_joint=0.0,wrist_1_joint=-1.57,wrist_2_joint=0.0,wrist_3_joint=0.0)}
+    initial_positions:=${dict(shoulder_pan_joint=03.2,shoulder_lift_joint=2.4,elbow_joint=1.3,wrist_1_joint=-0.6,wrist_2_joint=3.14,wrist_3_joint=0.0)}
     use_tool_communication:=false
     tool_voltage:=0
     tool_parity:=0
@@ -372,7 +372,7 @@
     <joint name="${prefix}wrist_3-flange" type="fixed">
       <parent link="${prefix}wrist_3_link" />
       <child link="${prefix}flange" />
-      <origin xyz="0 0 0.1" rpy="0 ${-pi/2.0} ${-pi/2.0}" />
+      <origin xyz="0 0 0.208" rpy="0 ${-pi/2.0} ${-pi/2.0}" />
     </joint>
 
     <!-- ROS-Industrial 'tool0' frame - all-zeros tool frame -->

@@ -1,0 +1,230 @@
+[0.000000] (-) TimerEvent: {}
+[0.000303] (ur_coppeliasim) JobQueued: {'identifier': 'ur_coppeliasim', 'dependencies': OrderedDict()}
+[0.000551] (ur_coppeliasim) JobStarted: {'identifier': 'ur_coppeliasim'}
+[0.011169] (ur_coppeliasim) JobProgress: {'identifier': 'ur_coppeliasim', 'progress': 'cmake'}
+[0.011430] (ur_coppeliasim) Command: {'cmd': ['/usr/bin/cmake', '/home/renzo/ros2_ws/src/ur_coppeliasim', '-DCMAKE_INSTALL_PREFIX=/home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim'], 'cwd': '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'renzo'), ('LC_TIME', 'it_IT.UTF-8'), ('ROS_PACKAGE_PATH', '/home/renzo/controller_ws/install/cartesian_controller_tests/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/renzo/ros2_ws/install/ur_coppeliasim/lib:/home/renzo/ros2_ws/install/project_interfaces/lib:/home/renzo/controller_ws/install/cartesian_compliance_controller/lib:/home/renzo/controller_ws/install/cartesian_motion_controller/lib:/home/renzo/controller_ws/install/cartesian_force_controller/lib:/home/renzo/controller_ws/install/cartesian_controller_simulation/lib:/home/renzo/controller_ws/install/cartesian_controller_handles/lib:/home/renzo/controller_ws/install/cartesian_controller_base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/renzo'), ('OLDPWD', '/home/renzo/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '2478'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/renzo/controller_ws/install:/home/renzo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'renzo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/renzo/controller_ws/install/cartesian_controller_tests/lib/x86_64-linux-gnu/pkgconfig:/home/renzo/controller_ws/install/cartesian_controller_tests/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'renzo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/renzo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/renzo/.local/bin'), ('SESSION_MANAGER', 'local/renzo:@/tmp/.ICE-unix/1424,unix/renzo:/tmp/.ICE-unix/1424'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/baf23cd8_e756_440d_a7f5_d31b5104598e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H93W22'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/ur3_injection_controller:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/renzo/ros2_ws/install/ur3_injection_controller/lib/python3.10/site-packages:/home/renzo/ros2_ws/install/project_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/ros2_ws/install/ur3_injection_controller:/opt/ros/humble:/home/renzo/controller_ws/install/cartesian_controller_tests:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base')]), 'shell': False}
+[0.093529] (ur_coppeliasim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.099739] (-) TimerEvent: {}
+[0.105567] (ur_coppeliasim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.197499] (ur_coppeliasim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.199832] (-) TimerEvent: {}
+[0.205311] (ur_coppeliasim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.205674] (ur_coppeliasim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.206233] (ur_coppeliasim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.208809] (ur_coppeliasim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300007] (-) TimerEvent: {}
+[0.400251] (-) TimerEvent: {}
+[0.500531] (-) TimerEvent: {}
+[0.600809] (-) TimerEvent: {}
+[0.701162] (-) TimerEvent: {}
+[0.801404] (-) TimerEvent: {}
+[0.901688] (-) TimerEvent: {}
+[0.901921] (ur_coppeliasim) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.995107] (ur_coppeliasim) StdoutLine: {'line': b'-- Found hardware_interface: 2.43.1 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[1.001768] (-) TimerEvent: {}
+[1.036529] (ur_coppeliasim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.042863] (ur_coppeliasim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.051722] (ur_coppeliasim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.064542] (ur_coppeliasim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.081288] (ur_coppeliasim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101867] (-) TimerEvent: {}
+[1.202114] (-) TimerEvent: {}
+[1.295043] (ur_coppeliasim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.298084] (ur_coppeliasim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.302197] (-) TimerEvent: {}
+[1.323897] (ur_coppeliasim) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.380737] (ur_coppeliasim) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.383763] (ur_coppeliasim) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.398363] (ur_coppeliasim) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.401797] (ur_coppeliasim) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.402300] (-) TimerEvent: {}
+[1.411187] (ur_coppeliasim) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[1.422073] (ur_coppeliasim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.432011] (ur_coppeliasim) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[1.502435] (-) TimerEvent: {}
+[1.523819] (ur_coppeliasim) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[1.524141] (ur_coppeliasim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.602563] (-) TimerEvent: {}
+[1.618743] (ur_coppeliasim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.619901] (ur_coppeliasim) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.677781] (ur_coppeliasim) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[1.702672] (-) TimerEvent: {}
+[1.763755] (ur_coppeliasim) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.795006] (ur_coppeliasim) StdoutLine: {'line': b'-- Generating done\n'}
+[1.796729] (ur_coppeliasim) StdoutLine: {'line': b'-- Build files have been written to: /home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim\n'}
+[1.802794] (-) TimerEvent: {}
+[1.805540] (ur_coppeliasim) CommandEnded: {'returncode': 0}
+[1.806160] (ur_coppeliasim) JobProgress: {'identifier': 'ur_coppeliasim', 'progress': 'build'}
+[1.806762] (ur_coppeliasim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim', '--', '-j8', '-l8'], 'cwd': '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'renzo'), ('LC_TIME', 'it_IT.UTF-8'), ('ROS_PACKAGE_PATH', '/home/renzo/controller_ws/install/cartesian_controller_tests/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/renzo/ros2_ws/install/ur_coppeliasim/lib:/home/renzo/ros2_ws/install/project_interfaces/lib:/home/renzo/controller_ws/install/cartesian_compliance_controller/lib:/home/renzo/controller_ws/install/cartesian_motion_controller/lib:/home/renzo/controller_ws/install/cartesian_force_controller/lib:/home/renzo/controller_ws/install/cartesian_controller_simulation/lib:/home/renzo/controller_ws/install/cartesian_controller_handles/lib:/home/renzo/controller_ws/install/cartesian_controller_base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/renzo'), ('OLDPWD', '/home/renzo/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '2478'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/renzo/controller_ws/install:/home/renzo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'renzo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/renzo/controller_ws/install/cartesian_controller_tests/lib/x86_64-linux-gnu/pkgconfig:/home/renzo/controller_ws/install/cartesian_controller_tests/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'renzo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/renzo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/renzo/.local/bin'), ('SESSION_MANAGER', 'local/renzo:@/tmp/.ICE-unix/1424,unix/renzo:/tmp/.ICE-unix/1424'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/baf23cd8_e756_440d_a7f5_d31b5104598e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H93W22'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/ur3_injection_controller:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/renzo/ros2_ws/install/ur3_injection_controller/lib/python3.10/site-packages:/home/renzo/ros2_ws/install/project_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/ros2_ws/install/ur3_injection_controller:/opt/ros/humble:/home/renzo/controller_ws/install/cartesian_controller_tests:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base')]), 'shell': False}
+[1.864246] (ur_coppeliasim) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ur_coppeliasim.dir/hardware/HWInterface.cpp.o\x1b[0m\n'}
+[1.902898] (-) TimerEvent: {}
+[2.003170] (-) TimerEvent: {}
+[2.103421] (-) TimerEvent: {}
+[2.203712] (-) TimerEvent: {}
+[2.303973] (-) TimerEvent: {}
+[2.404271] (-) TimerEvent: {}
+[2.504549] (-) TimerEvent: {}
+[2.604816] (-) TimerEvent: {}
+[2.705126] (-) TimerEvent: {}
+[2.805413] (-) TimerEvent: {}
+[2.905678] (-) TimerEvent: {}
+[3.005980] (-) TimerEvent: {}
+[3.106259] (-) TimerEvent: {}
+[3.206522] (-) TimerEvent: {}
+[3.306788] (-) TimerEvent: {}
+[3.407142] (-) TimerEvent: {}
+[3.507469] (-) TimerEvent: {}
+[3.607802] (-) TimerEvent: {}
+[3.708089] (-) TimerEvent: {}
+[3.808382] (-) TimerEvent: {}
+[3.908699] (-) TimerEvent: {}
+[4.009003] (-) TimerEvent: {}
+[4.109309] (-) TimerEvent: {}
+[4.209608] (-) TimerEvent: {}
+[4.309959] (-) TimerEvent: {}
+[4.410274] (-) TimerEvent: {}
+[4.510603] (-) TimerEvent: {}
+[4.610904] (-) TimerEvent: {}
+[4.711278] (-) TimerEvent: {}
+[4.811576] (-) TimerEvent: {}
+[4.911858] (-) TimerEvent: {}
+[5.012194] (-) TimerEvent: {}
+[5.112495] (-) TimerEvent: {}
+[5.212797] (-) TimerEvent: {}
+[5.313095] (-) TimerEvent: {}
+[5.413425] (-) TimerEvent: {}
+[5.513734] (-) TimerEvent: {}
+[5.613996] (-) TimerEvent: {}
+[5.714308] (-) TimerEvent: {}
+[5.814610] (-) TimerEvent: {}
+[5.914935] (-) TimerEvent: {}
+[6.015248] (-) TimerEvent: {}
+[6.115551] (-) TimerEvent: {}
+[6.215853] (-) TimerEvent: {}
+[6.316217] (-) TimerEvent: {}
+[6.416515] (-) TimerEvent: {}
+[6.516844] (-) TimerEvent: {}
+[6.617190] (-) TimerEvent: {}
+[6.717503] (-) TimerEvent: {}
+[6.817810] (-) TimerEvent: {}
+[6.918174] (-) TimerEvent: {}
+[7.018493] (-) TimerEvent: {}
+[7.118784] (-) TimerEvent: {}
+[7.219058] (-) TimerEvent: {}
+[7.319375] (-) TimerEvent: {}
+[7.419666] (-) TimerEvent: {}
+[7.519993] (-) TimerEvent: {}
+[7.620285] (-) TimerEvent: {}
+[7.720576] (-) TimerEvent: {}
+[7.820864] (-) TimerEvent: {}
+[7.921186] (-) TimerEvent: {}
+[8.021482] (-) TimerEvent: {}
+[8.121791] (-) TimerEvent: {}
+[8.222086] (-) TimerEvent: {}
+[8.322371] (-) TimerEvent: {}
+[8.422642] (-) TimerEvent: {}
+[8.522978] (-) TimerEvent: {}
+[8.623289] (-) TimerEvent: {}
+[8.723579] (-) TimerEvent: {}
+[8.823877] (-) TimerEvent: {}
+[8.924221] (-) TimerEvent: {}
+[9.024541] (-) TimerEvent: {}
+[9.124832] (-) TimerEvent: {}
+[9.225133] (-) TimerEvent: {}
+[9.325418] (-) TimerEvent: {}
+[9.425689] (-) TimerEvent: {}
+[9.525993] (-) TimerEvent: {}
+[9.626285] (-) TimerEvent: {}
+[9.726598] (-) TimerEvent: {}
+[9.826891] (-) TimerEvent: {}
+[9.927255] (-) TimerEvent: {}
+[10.027559] (-) TimerEvent: {}
+[10.127869] (-) TimerEvent: {}
+[10.228183] (-) TimerEvent: {}
+[10.328462] (-) TimerEvent: {}
+[10.428766] (-) TimerEvent: {}
+[10.529071] (-) TimerEvent: {}
+[10.618935] (ur_coppeliasim) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libur_coppeliasim.so\x1b[0m\n'}
+[10.629182] (-) TimerEvent: {}
+[10.729438] (-) TimerEvent: {}
+[10.829702] (-) TimerEvent: {}
+[10.930014] (-) TimerEvent: {}
+[11.030263] (-) TimerEvent: {}
+[11.130546] (-) TimerEvent: {}
+[11.149890] (ur_coppeliasim) StdoutLine: {'line': b'[100%] Built target ur_coppeliasim\n'}
+[11.162340] (ur_coppeliasim) CommandEnded: {'returncode': 0}
+[11.193906] (ur_coppeliasim) JobProgress: {'identifier': 'ur_coppeliasim', 'progress': 'install'}
+[11.203703] (ur_coppeliasim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim'], 'cwd': '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'renzo'), ('LC_TIME', 'it_IT.UTF-8'), ('ROS_PACKAGE_PATH', '/home/renzo/controller_ws/install/cartesian_controller_tests/share'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/renzo/ros2_ws/install/ur_coppeliasim/lib:/home/renzo/ros2_ws/install/project_interfaces/lib:/home/renzo/controller_ws/install/cartesian_compliance_controller/lib:/home/renzo/controller_ws/install/cartesian_motion_controller/lib:/home/renzo/controller_ws/install/cartesian_force_controller/lib:/home/renzo/controller_ws/install/cartesian_controller_simulation/lib:/home/renzo/controller_ws/install/cartesian_controller_handles/lib:/home/renzo/controller_ws/install/cartesian_controller_base/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/renzo'), ('OLDPWD', '/home/renzo/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '2478'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/renzo/controller_ws/install:/home/renzo/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'renzo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/renzo/controller_ws/install/cartesian_controller_tests/lib/x86_64-linux-gnu/pkgconfig:/home/renzo/controller_ws/install/cartesian_controller_tests/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'renzo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/renzo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/renzo/.local/bin'), ('SESSION_MANAGER', 'local/renzo:@/tmp/.ICE-unix/1424,unix/renzo:/tmp/.ICE-unix/1424'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/baf23cd8_e756_440d_a7f5_d31b5104598e'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.H93W22'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/ur3_injection_controller:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/renzo/ros2_ws/install/ur3_injection_controller/lib/python3.10/site-packages:/home/renzo/ros2_ws/install/project_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/ros2_ws/install/ur3_injection_controller:/opt/ros/humble:/home/renzo/controller_ws/install/cartesian_controller_tests:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base')]), 'shell': False}
+[11.212358] (ur_coppeliasim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[11.212697] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/ur_coppeliasim.xml\n'}
+[11.212850] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/include/ur_coppeliasim\n'}
+[11.213072] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/include/ur_coppeliasim/ur_coppeliasim\n'}
+[11.213196] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/include/ur_coppeliasim/ur_coppeliasim/visibility_control.h\n'}
+[11.213312] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/include/ur_coppeliasim/ur_coppeliasim/HWInterface.hpp\n'}
+[11.213424] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/launch\n'}
+[11.213527] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/launch/ur_coppelia_controllers.launch.py\n'}
+[11.230430] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf\n'}
+[11.230808] (-) TimerEvent: {}
+[11.230996] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/ur_macro.xacro\n'}
+[11.231109] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/xacro_file_order\n'}
+[11.246448] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/ur.ros2_control.xacro\n'}
+[11.246919] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/inc\n'}
+[11.247211] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/inc/ur_transmissions.xacro\n'}
+[11.247333] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/inc/ur_common.xacro\n'}
+[11.247564] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/ur.urdf.xacro\n'}
+[11.247724] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes\n'}
+[11.247808] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e\n'}
+[11.247868] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual\n'}
+[11.247934] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/wrist2.dae\n'}
+[11.249202] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/wrist1.dae\n'}
+[11.250650] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/wrist3.dae\n'}
+[11.250932] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/forearm.dae\n'}
+[11.252260] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/shoulder.dae\n'}
+[11.254164] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/base.dae\n'}
+[11.254569] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/upperarm.dae\n'}
+[11.258219] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision\n'}
+[11.258523] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/wrist2.stl\n'}
+[11.258708] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/upperarm.stl\n'}
+[11.258844] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/wrist1.stl\n'}
+[11.259058] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/wrist3.stl\n'}
+[11.259321] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/forearm.stl\n'}
+[11.259540] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/shoulder.stl\n'}
+[11.259682] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/base.stl\n'}
+[11.259887] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config\n'}
+[11.260061] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur_controllers_coppelia.yaml\n'}
+[11.260273] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/initial_positions.yaml\n'}
+[11.260387] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e\n'}
+[11.260486] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e/default_kinematics.yaml\n'}
+[11.260570] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e/joint_limits.yaml\n'}
+[11.260652] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e/visual_parameters.yaml\n'}
+[11.260783] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e/physical_parameters.yaml\n'}
+[11.260870] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/rviz\n'}
+[11.261029] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/rviz/robot.rviz\n'}
+[11.261326] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/lib/libur_coppeliasim.so\n'}
+[11.267857] (ur_coppeliasim) StdoutLine: {'line': b'-- Set runtime path of "/home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/lib/libur_coppeliasim.so" to ""\n'}
+[11.268124] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/library_path.sh\n'}
+[11.268325] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/library_path.dsv\n'}
+[11.268479] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ament_index/resource_index/package_run_dependencies/ur_coppeliasim\n'}
+[11.268729] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ament_index/resource_index/parent_prefix_path/ur_coppeliasim\n'}
+[11.268918] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/ament_prefix_path.sh\n'}
+[11.269163] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/ament_prefix_path.dsv\n'}
+[11.269427] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/path.sh\n'}
+[11.269609] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/path.dsv\n'}
+[11.269800] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/local_setup.bash\n'}
+[11.269900] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/local_setup.sh\n'}
+[11.270169] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/local_setup.zsh\n'}
+[11.270372] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/local_setup.dsv\n'}
+[11.270627] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/package.dsv\n'}
+[11.270839] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ament_index/resource_index/packages/ur_coppeliasim\n'}
+[11.271164] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ur_coppeliasim\n'}
+[11.271434] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/export_ur_coppeliasimExport.cmake\n'}
+[11.271661] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/export_ur_coppeliasimExport-noconfig.cmake\n'}
+[11.271790] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.271937] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.272217] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/ur_coppeliasimConfig.cmake\n'}
+[11.272499] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/ur_coppeliasimConfig-version.cmake\n'}
+[11.272735] (ur_coppeliasim) StdoutLine: {'line': b'-- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/package.xml\n'}
+[11.274769] (ur_coppeliasim) CommandEnded: {'returncode': 0}
+[11.330979] (-) TimerEvent: {}
+[11.343075] (ur_coppeliasim) JobEnded: {'identifier': 'ur_coppeliasim', 'rc': 0}
+[11.343917] (-) EventReactorShutdown: {}

@@ -1,0 +1,109 @@
+[0.012s] Invoking command in '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim': CMAKE_PREFIX_PATH=/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/ros2_ws/install/ur3_injection_controller:/opt/ros/humble:/home/renzo/controller_ws/install/cartesian_controller_tests:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base /usr/bin/cmake /home/renzo/ros2_ws/src/ur_coppeliasim -DCMAKE_INSTALL_PREFIX=/home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim
+[0.093s] -- The CXX compiler identification is GNU 11.4.0
+[0.105s] -- Detecting CXX compiler ABI info
+[0.197s] -- Detecting CXX compiler ABI info - done
+[0.205s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.205s] -- Detecting CXX compile features
+[0.206s] -- Detecting CXX compile features - done
+[0.208s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.901s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.995s] -- Found hardware_interface: 2.43.1 (/opt/ros/humble/share/hardware_interface/cmake)
+[1.036s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.042s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.051s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.064s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.081s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.295s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.298s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.323s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.380s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.383s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.398s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.401s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.411s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[1.422s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.432s] -- Looking for C++ include pthread.h
+[1.523s] -- Looking for C++ include pthread.h - found
+[1.524s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.618s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.619s] -- Found Threads: TRUE  
+[1.677s] -- Found ament_cmake_gtest: 1.3.10 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[1.763s] -- Configuring done
+[1.795s] -- Generating done
+[1.796s] -- Build files have been written to: /home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim
+[1.805s] Invoked command in '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim' returned '0': CMAKE_PREFIX_PATH=/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/ros2_ws/install/ur3_injection_controller:/opt/ros/humble:/home/renzo/controller_ws/install/cartesian_controller_tests:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base /usr/bin/cmake /home/renzo/ros2_ws/src/ur_coppeliasim -DCMAKE_INSTALL_PREFIX=/home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim
+[1.807s] Invoking command in '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim': CMAKE_PREFIX_PATH=/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/ros2_ws/install/ur3_injection_controller:/opt/ros/humble:/home/renzo/controller_ws/install/cartesian_controller_tests:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base /usr/bin/cmake --build /home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim -- -j8 -l8
+[1.864s] [ 50%] [32mBuilding CXX object CMakeFiles/ur_coppeliasim.dir/hardware/HWInterface.cpp.o[0m
+[10.619s] [100%] [32m[1mLinking CXX shared library libur_coppeliasim.so[0m
+[11.150s] [100%] Built target ur_coppeliasim
+[11.162s] Invoked command in '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim' returned '0': CMAKE_PREFIX_PATH=/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/ros2_ws/install/ur3_injection_controller:/opt/ros/humble:/home/renzo/controller_ws/install/cartesian_controller_tests:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base /usr/bin/cmake --build /home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim -- -j8 -l8
+[11.204s] Invoking command in '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim': CMAKE_PREFIX_PATH=/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/ros2_ws/install/ur3_injection_controller:/opt/ros/humble:/home/renzo/controller_ws/install/cartesian_controller_tests:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base /usr/bin/cmake --install /home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim
+[11.212s] -- Install configuration: ""
+[11.212s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/ur_coppeliasim.xml
+[11.212s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/include/ur_coppeliasim
+[11.213s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/include/ur_coppeliasim/ur_coppeliasim
+[11.213s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/include/ur_coppeliasim/ur_coppeliasim/visibility_control.h
+[11.213s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/include/ur_coppeliasim/ur_coppeliasim/HWInterface.hpp
+[11.213s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/launch
+[11.213s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/launch/ur_coppelia_controllers.launch.py
+[11.230s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf
+[11.231s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/ur_macro.xacro
+[11.231s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/xacro_file_order
+[11.246s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/ur.ros2_control.xacro
+[11.247s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/inc
+[11.247s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/inc/ur_transmissions.xacro
+[11.247s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/inc/ur_common.xacro
+[11.247s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/urdf/ur.urdf.xacro
+[11.247s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes
+[11.247s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e
+[11.247s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual
+[11.247s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/wrist2.dae
+[11.249s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/wrist1.dae
+[11.250s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/wrist3.dae
+[11.250s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/forearm.dae
+[11.252s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/shoulder.dae
+[11.254s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/base.dae
+[11.254s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/visual/upperarm.dae
+[11.258s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision
+[11.258s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/wrist2.stl
+[11.258s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/upperarm.stl
+[11.258s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/wrist1.stl
+[11.259s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/wrist3.stl
+[11.259s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/forearm.stl
+[11.259s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/shoulder.stl
+[11.259s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/meshes/ur3e/collision/base.stl
+[11.259s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config
+[11.260s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur_controllers_coppelia.yaml
+[11.260s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/initial_positions.yaml
+[11.260s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e
+[11.260s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e/default_kinematics.yaml
+[11.260s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e/joint_limits.yaml
+[11.260s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e/visual_parameters.yaml
+[11.260s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/config/ur3e/physical_parameters.yaml
+[11.260s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/rviz
+[11.261s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/rviz/robot.rviz
+[11.261s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/lib/libur_coppeliasim.so
+[11.267s] -- Set runtime path of "/home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/lib/libur_coppeliasim.so" to ""
+[11.268s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/library_path.sh
+[11.268s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/library_path.dsv
+[11.268s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ament_index/resource_index/package_run_dependencies/ur_coppeliasim
+[11.268s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ament_index/resource_index/parent_prefix_path/ur_coppeliasim
+[11.268s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/ament_prefix_path.sh
+[11.269s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/ament_prefix_path.dsv
+[11.269s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/path.sh
+[11.269s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/environment/path.dsv
+[11.269s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/local_setup.bash
+[11.269s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/local_setup.sh
+[11.270s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/local_setup.zsh
+[11.270s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/local_setup.dsv
+[11.270s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/package.dsv
+[11.270s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ament_index/resource_index/packages/ur_coppeliasim
+[11.271s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/ur_coppeliasim
+[11.271s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/export_ur_coppeliasimExport.cmake
+[11.271s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/export_ur_coppeliasimExport-noconfig.cmake
+[11.271s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/ament_cmake_export_targets-extras.cmake
+[11.271s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.272s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/ur_coppeliasimConfig.cmake
+[11.272s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/cmake/ur_coppeliasimConfig-version.cmake
+[11.272s] -- Installing: /home/renzo/ros2_ws/src/ur_coppeliasim/install/ur_coppeliasim/share/ur_coppeliasim/package.xml
+[11.274s] Invoked command in '/home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim' returned '0': CMAKE_PREFIX_PATH=/home/renzo/ros2_ws/install/ur_coppeliasim:/home/renzo/ros2_ws/install/project_interfaces:/home/renzo/controller_ws/install/cartesian_compliance_controller:/home/renzo/controller_ws/install/cartesian_motion_controller:/home/renzo/controller_ws/install/cartesian_force_controller:/home/renzo/controller_ws/install/cartesian_controller_utilities:/home/renzo/ros2_ws/install/ur3_injection_controller:/opt/ros/humble:/home/renzo/controller_ws/install/cartesian_controller_tests:/home/renzo/controller_ws/install/cartesian_controller_simulation:/home/renzo/controller_ws/install/cartesian_controller_handles:/home/renzo/controller_ws/install/cartesian_controller_base /usr/bin/cmake --install /home/renzo/ros2_ws/src/ur_coppeliasim/build/ur_coppeliasim

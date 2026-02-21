@@ -94,32 +94,3 @@ tar -xf mujoco-2.1.1-linux-x86_64.tar.gz
 cd ~/controller_ws/
 colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
-
-## Running the simulation  
-*For this demo, we assume you followed point 8.*  
-#### 0. Source terminals
-Remember to always source both the controller_ws and ros2_ws workspaces:
-```
-source $HOME/ros2_ws/install/setup.bash
-source $HOME/controller_ws/install/setup.bash
-```
-You can automate this procedure copying these two lines in the .bashrc so that they are executed as soon as you start a terminal. This can be done with:
-```
-echo $'source $HOME/ros2_ws/install/setup.bash  \nsource $HOME/controller_ws/install/setup.bash' >> $HOME/.bashrc
-```
-
-#### 1. Load the world
-Open CoppeliaSim
-```
-cd ~/CoppeliaSim/
-./coppeliaSim.sh
-```
-and load ``coppelia_world.ttt`` which is under ``~/ros2_ws/src/ur_coppeliasim`` through ``File->Open_Scene``, then click the play button. The robot will move to a predefined HOMING joint configuration.
-
-#### 2. Run the hardware interface + cartesian motion controller:
-```
-ros2 launch ur_coppeliasim ur_coppelia_controllers.launch.py
-```
-An RViz window will display the robot model along with an interactive marker at the end-effector, which allows us to change the end-effector target frame by drag-and-drop. Then, the controller will automatically compute the desired joint position, which will be sent to the simulator.
-
-

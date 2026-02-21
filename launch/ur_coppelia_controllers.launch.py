@@ -131,7 +131,7 @@ def generate_launch_description():
         cartesian_compliance_controller_spawner,
         #motion_control_handle_spawner,
         robot_state_publisher,
-        rviz,
+        #rviz,
     ]
 
     return LaunchDescription(declared_arguments + nodes)
